@@ -15,6 +15,10 @@ router.get("/", (req, res) => {
   res.json(students);
 });
 
+router.get("/std", (req, res) => {
+  res.json(students);
+});
+
 router.put("/:id", (req, res) => {
   const { id } = req.params;
   const { name, email, age } = req.body;
